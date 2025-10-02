@@ -1,0 +1,237 @@
+/* HEADER- cabeçalho */
+body {
+    margin: 0;
+    font-family: sans-serif; /*tipo de fonte*/
+}
+
+
+/*header "cabeçalho"*/
+.header {
+    background-color: black;
+    border-bottom: 1px solid #32b9cd;   
+}
+
+/*navebar*/
+.navbar{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #e3b062;
+    width: 400px; /*largura da navbar*/
+ }
+
+/*container -- onde as coisas devem ser alinhada*/
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*top right bottom left
+    padding: 10px 15px 10px 15px;
+    */ /*tipos de alinhamento dentro do padding */
+    padding: 0 15px; /*espaçamento*/
+    /*top/bottom  rigth/left
+    padding: 0 15px;
+    */
+}
+
+/*navbar - texto dela -- <a>*/
+.navbar a {
+    color: #e3b062;
+    text-decoration: none; /*tirar o sublinhado dos links*/
+}
+
+/*estilização da navbar o link de direcionamento da pagina
+ONDE TEM A DIV NA PARTE SELECIONADA : 
+
+ <li class="agora">
+            <a href="#">Inicial</a>
+          </li>
+*/
+.agora a {
+    color: white;
+    font-weight: bold;
+}
+
+/*titulo da header*/
+.titulo {
+    color: #32b9cd;
+}
+
+/* HEADER FIM*/
+
+
+/* BANNER INICIO */
+/*selcionar uma imagem do arquivo do html:
+url(../)
+*/
+
+.banner {
+    background-image: url(../assets/imgs/bg-jelly-fish-para_outras_pags.png) ;
+    background-size: cover; /*adequa minha imagem ao tamanho da tela // redimensiona*/
+    height: 500px;
+}
+/*itens dentro da div conteiner e banner*/
+.banner .container {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+/*alterar as span */
+.banner .container span {
+    font-weight: bold;
+
+}
+
+/*titulo dentro do banner*/
+.banner .container p {
+    color: white;
+    width: 150px; /*largura*/
+    font-size: 25px;
+}
+/*banner fim*/
+
+/*SOCIAL INICIO*/
+.social {
+    height:  400px;
+    width: 100%;
+    background-color: azure ;
+}
+
+/*imagens do container*/
+.social .container{
+    display: flex;
+    justify-content: center ;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+}
+
+/*alinhamento do texto das boxes de missão*/
+.boxes{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ /*estilizar posição do texto de missão, valores, visão*/
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    flex-direction: column;
+}
+
+/*estilizar as imagens*/
+.box img {
+    height: 40%;
+    width: 40%;
+}
+
+/*mudar o texto do missão blabla */
+.box h4 {
+    color: blueviolet;
+}
+/*social fim */
+
+/*FOOTER INICIO */
+
+/*EDITAR A DIV DO RODAPE */
+.footer{
+    background-color: #32b9cd;
+}
+
+/*ediatando os itens do footer*/
+.footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center ;
+    color: white;
+    flex-direction: column;
+    padding: 50px 0; /*top/bottom */ /*padding -top : 50px; padding-bottom: 50px;*/
+    /*padding: auto ; se ajusta automaticamente na tela*/
+}
+
+/*FOOTER FIM */
+
+.login {
+    background-image: url(../assets/imgs/bg-jelly-fish-para_outras_pags.png);
+    background-size: cover;
+    height: 500px ;
+}
+.login .container {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.card-login {
+    background-color: #e4e4e4;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+    border-radius: 7px;
+}
+h2 {
+    color: #f71e5b;
+}
+.formulario span {
+    color: #f71e5b;
+    height: 20px;
+}
+
+.card .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.botao {
+    background-color: #f71e5b;
+    border-radius: 5px;
+    border: solid;
+    border-color: #f71e5b;
+    color: #FFFFFF;
+    height: 25px;
+    width: 100px;
+}
+.campo input {
+    border-radius: 7px;
+    border: solid 2px;
+    border-color: #32b9cd;
+    width: 450px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.card-cadastro {
+    background-color: #e4e4e4;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+    border-radius: 7px;
+}
